@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kyna Rochlani • Portfolio</title>
+    <meta name="description" content="Portfolio of Kyna Rochlani — USC CECS + AI Minor. Projects, research, and experience in AI, systems, and product engineering." />
+    <meta name="theme-color" content="#0b6240" />
+    <meta property="og:title" content="Kyna Rochlani — Portfolio" />
+    <meta property="og:description" content="USC CECS + AI Minor. Projects, research, and experience in AI, systems, software, and product engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/kyna-profile.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true"></div>
+    <div class="floating-shapes" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">KR</a>
+        
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Intro">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Hey, I'm</span>
+            <span class="title-line">Kyna Rochlani.</span>
+            <span class="title-line"></span>
+          </h1>
+          <p class="subtitle">Computer Engineering & Computer Science @ USC • AI Minor</p>
+          <p class="tagline">I build human-centered software — from AI agents and research tooling to polished product experiences.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn" href="#contact">Get in Touch</a>
+          </div>
+          <div class="quick-contacts">
+            <button class="copy highlight" data-copy="rochlani@usc.edu">✉️ rochlani@usc.edu</button>
+            <button class="copy" data-copy="+13107014519">📱 +1 (310) 701-4519</button>
+            <button class="copy" data-copy="kynarochlani@gmail.com">Gmail</button>
+            <a class="link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/kyna-rochlani-805993262">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/kyna-profile.jpg" alt="Portrait of Kyna Rochlani" />
+          <div class="photo-glow"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I’m a USC student passionate about building agentic AI systems and delightful products. Recently, I have been developing full‑stack features and voice AI assistants, researching generative chip design tooling, and shipping real apps people use.
+        </p>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="card reveal">
+            <h3>Wizz Financial — Associate Software Engineering Intern</h3>
+            <div class="meta">Dubai, UAE • Aug 2024 – Present</div>
+            <ul>
+              <li>Built full‑stack features for <strong>WizzGenie</strong> (FastAPI, PostgreSQL, SwiftUI) including KPI dashboards, data analysis, and animated forecasts.</li>
+              <li>Integrated a <strong>voice‑enabled AI assistant</strong> using GPT‑4 and time‑series forecasting to deliver spoken, data‑driven insights for executives.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Research Assistant — USC ACORN</h3>
+            <div class="meta">Los Angeles, CA • Sept 2024 – Present</div>
+            <ul>
+              <li>Researching <strong>template library generation</strong> with Marionette for parameterized chip layouts to accelerate design‑space exploration.</li>
+              <li>Building flexible templates that adapt to block aspect ratios and architectures, reducing manual layout time and enabling faster floorplanning.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>High School Research Assistant — University of Kentucky</h3>
+            <div class="meta">Remote • Jun 2023 – Aug 2023</div>
+            <ul>
+              <li>Studied digital health interventions for Alzheimer’s caregivers; built measures using CNNs/RNNs to analyze digital health literacy.</li>
+              <li>Used national trend surveys with Python data mining to identify predictors of digital literacy among caregivers vs healthy individuals.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>MVP Applications & Game Design — Software Intern</h3>
+            <div class="meta">Abu Dhabi • Dec 2022 – Feb 2023</div>
+            <ul>
+              <li>Developed a workplace clock‑in/clock‑out app for attendance management.</li>
+              <li>Gained full‑stack experience, database integration, and participated in client reviews.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter" data-filter="ai" role="tab">AI</button>
+            <button class="filter" data-filter="mobile" role="tab">Mobile</button>
+            <button class="filter" data-filter="systems" role="tab">Systems</button>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="project card reveal" data-tags="mobile">
+            <h3>ACS Service Wallet (iOS)</h3>
+            <p>Mobile app to track service club activities and expenses at ACS with real‑time database integration.</p>
+            <div class="actions">
+              <a class="btn" href="https://youtu.be/6yezJ4xHhIQ" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="project card reveal" data-tags="ai systems">
+            <h3>WizzGenie (Internal)</h3>
+            <p>Executive insights platform with AI voice assistant, KPI dashboards, and forecasting (FastAPI, PostgreSQL, SwiftUI).</p>
+          </article>
+
+          <article class="project card reveal" data-tags="ai">
+            <h3>Agentic AI Workflows @ Launch AI</h3>
+            <p>Student org projects building custom agents with n8n, FastAPI, and LLM APIs to automate tasks and analyze data.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-head">
+          <h2>Gallery</h2>
+          <div class="filters" role="tablist" aria-label="Gallery filters">
+            <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter" data-filter="acs" role="tab">ACS Service</button>
+            <button class="filter" data-filter="wizz" role="tab">WizzGenie</button>
+          </div>
+        </div>
+        <p class="subtitle">Snapshots from ACS Service Wallet and WizzGenie.</p>
+        <div class="gallery" aria-label="Project gallery">
+          <figure class="gallery-item" data-project="acs" data-group="acs" data-caption="ACS Service Wallet — Splash screen">
+            <img src="assets/gallery/acs-1.png" alt="ACS Service Wallet splash screen" />
+          </figure>
+          <figure class="gallery-item" data-project="acs" data-group="acs" data-caption="ACS Service Wallet — Transactions list">
+            <img src="assets/gallery/acs-2.png" alt="ACS Service Wallet transactions screen" />
+          </figure>
+          <figure class="gallery-item" data-project="wizz" data-group="wizz" data-caption="WizzGenie — Overview dashboard">
+            <img src="assets/gallery/wizz-1.png" alt="WizzGenie overview dashboard" />
+          </figure>
+          <figure class="gallery-item" data-project="wizz" data-group="wizz" data-caption="WizzGenie — Ask WizzAI">
+            <img src="assets/gallery/wizz-2.png" alt="WizzGenie ask AI screen" />
+          </figure>
+          <figure class="gallery-item" data-project="wizz" data-group="wizz" data-caption="WizzGenie — AI Forecasts">
+            <img src="assets/gallery/wizz-3.png" alt="WizzGenie AI forecasts screen" />
+          </figure>
+        </div>
+
+        <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+          <button class="lightbox-close" aria-label="Close">×</button>
+          <button class="lightbox-prev" aria-label="Previous">‹</button>
+          <img class="lightbox-image" alt="Expanded view" />
+          <div class="lightbox-caption" id="lightbox-caption"></div>
+          <div class="lightbox-counter" id="lightbox-counter"></div>
+          <button class="lightbox-next" aria-label="Next">›</button>
+        </div>
+      </section>
+
+      <section id="activities" class="section">
+        <h2>Activities</h2>
+        <ul class="list">
+          <li><strong>Launch AI</strong>: Founder/Lead — building agentic AI workflows; workshops and partnerships with USC Spark.</li>
+          <li><strong>Harvard CS50</strong>: 12‑week CS course covering Java, Python, C, SQL; data structures and algorithms.</li>
+          <li><strong>American Computer Science League</strong>: 3rd highest in division; explored recursion, notations, Boolean algebra.</li>
+          <li><strong>UCLA CS Summer Program</strong>: College‑level Python; earned 4 credits and top score (193/200).</li>
+        </ul>
+      </section>
+
+      <section id="awards" class="section">
+        <h2>Awards</h2>
+        <ul class="list">
+          <li><strong>Valedictorian</strong> — 4.0/4.0 UW across all four high‑school years.</li>
+          <li><strong>Dean’s Research Award</strong> & <strong>Dean’s List</strong> — USC Viterbi School of Engineering.</li>
+        </ul>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>University of Southern California</h3>
+          <div class="meta">B.S. Computer Engineering and Computer Science • Minor in Artificial Intelligence</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <button class="contact-item copy" data-copy="+13107014519">📱 +1 (310) 701-4519</button>
+          <button class="contact-item copy" data-copy="kynarochlani@gmail.com">✉️ kynarochlani@gmail.com</button>
+          <button class="contact-item copy" data-copy="rochlani@usc.edu">🎓 rochlani@usc.edu</button>
+          <a class="contact-item" href="https://www.linkedin.com/in/kyna-rochlani-805993262" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Kyna Rochlani</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
