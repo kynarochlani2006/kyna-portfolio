@@ -575,6 +575,11 @@ body[data-style], .light { all: unset; }
   transition: all 0.3s ease;
 }
 
+.gallery-item[data-group="looped"] img {
+  aspect-ratio: 16/9;
+  object-position: center;
+}
+
 .gallery-item::after { 
   content: attr(data-group) " • " attr(data-caption); 
   position: absolute; 
