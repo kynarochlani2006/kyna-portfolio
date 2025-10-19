@@ -565,10 +565,6 @@ body[data-style], .light { all: unset; }
   transform: translateZ(0); 
   transition: all 0.4s ease;
 }
-.gallery-item[data-project="looped"] img {
-  max-height: 250px;
-  aspect-ratio: 9/16;
-}
 
 .gallery-item img { 
   width: 100%; 
