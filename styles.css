@@ -565,9 +565,19 @@ body[data-style], .light { all: unset; }
   transform: translateZ(0); 
   transition: all 0.4s ease;
 }
+.gallery-item[data-project="looped"] {
+  grid-column: span 1;
+  max-width: 220px;        /* makes them narrower like phone mockups */
+  margin: 0 auto;
+}
+
 .gallery-item[data-project="looped"] img {
-  max-height: 250px;
-  aspect-ratio: 9/16;
+  width: 100%;
+  height: auto;
+  max-height: 300px;       /* keeps them shorter to fit in one row */
+  object-fit: contain;     /* prevents cropping and preserves the full image */
+  border-radius: 16px;
+  display: block;
 }
 
 .gallery-item img { 
